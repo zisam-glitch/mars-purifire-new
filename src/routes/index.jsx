@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../pages";
 import Homepage from "../pages/Home";
-import AboutPage from "../pages/AboutPage";
 import Dental from "../pages/Dental";
 import Education from "../pages/Education";
 import HealthCare from "../pages/HealthCare";
@@ -9,41 +8,9 @@ import Business from "../pages/Business";
 import Hospitality from "../pages/Hospitality";
 import GymAndFitness from "../pages/GymAndFitness";
 import WaterPurifire from "../pages/WaterPurifire";
-
-import HomepageTwo from "../pages/HomeTwo";
-import HomepageThree from "../pages/HomeThree";
-import HomepageFour from "../pages/HomeFour";
-import HomepageFive from "../pages/HomeFive";
-import HomepageSix from "../pages/HomeSix";
-import HomepageSeven from "../pages/HomeSeven";
-import HomepageEight from "../pages/HomeEight";
-import HomepageNine from "../pages/HomeNine";
-import HomepageTen from "../pages/HomeTen";
-import ResetPasswordPage from "../pages/ResetPasswordPage";
-import SignInPage from "../pages/SignInPage";
-import SignUpPage from "../pages/SignUpPage";
-import ServiceDetails from "../pages/ServiceDetails";
-import ServicePage from "../pages/ServicePage";
-import ContactPageOne from "../pages/ContactPageOne";
-import ContactPageTwo from "../pages/ContactPageTwo";
 import ContactPageThree from "../pages/ContactPageThree";
-import PricingPageOne from "../pages/PricingPageOne";
-import PricingPageTwo from "../pages/PricingPageTwo";
-import CareerPage from "../pages/CareerPage";
-import CareerDetailsPage from "../pages/CareerDetailsPage";
 import ErrorPage from "../pages/ErrorPage";
-import ComingSoonPage from "../pages/ComingSoonPage";
-import BlogPage from "../pages/BlogPage";
-import BlogDetailsPage from "../pages/BlogDetailsPage";
-import TeamPage from "../pages/TeamPage";
-import PortfolioDetailsPage from "../pages/PortfolioDetailsPage";
 import PortfolioOnePage from "../pages/PortfolioOnePage";
-import PortfolioThreePage from "../pages/PortfolioThreePage";
-import PortfolioFourPage from "../pages/PortfolioFourPage";
-import FaqOnePage from "../pages/FaqOnePage";
-import FaqTwoPage from "../pages/FaqTwoPage";
-import FaqThreePage from "../pages/FaqThreePage";
-import FaqFourPage from "../pages/FaqFourPage";
 
 export const router = createBrowserRouter([
   {
@@ -197,7 +164,6 @@ export const router = createBrowserRouter([
   //   path: "/team",
   //   element: <TeamPage />,
   // },
-
 
   // {
   //   path: "/portfolio-3",
