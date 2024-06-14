@@ -1,0 +1,44 @@
+[
+    {
+        "active": "true",
+        "id": "iso-14644-clean-room-standard",
+        "parent": "home-1-faq",
+        "title": "ISO:14644 Clean Room Standard",
+        "body": "The clean air delivery rates (CADR) for all speed settings for this unit have been externally validated to ISO:14644. Removing the requirement to add 50% as per the BDA guidelines."
+    },
+    {
+        "active": "true",
+        "id": "hepa-13",
+        "parent": "home-1-faq",
+        "title": "HEPA 13",
+        "body": "HEPA 13 is a medical grade air filter that captures 99.97% of airborne particles as small as 0.3 microns. This is the minimum standard required to filter out COVID-19."
+    },
+    {
+        "active": "true",
+        "id": "uvc",
+        "parent": "home-1-faq",
+        "title": "UVC",
+        "body": "UVC is a disinfection method that uses short-wavelength ultraviolet (UV-C) light to kill or inactivate microorganisms by destroying nucleic acids and disrupting their DNA, leaving them unable to perform vital cellular functions."
+    },
+    {
+        "active": "true",
+        "id": "ion-technology",
+        "parent": "home-1-faq",
+        "title": "ION Technology",
+        "body": "Ionizers use a high voltage electrical current across a set of plates to generate ions in the air flow, attracting and removing particulates. This static charge causes the particulates to be attracted to the plates, improving air quality."
+    },
+    {
+        "active": "true",
+        "id": "activated-carbon",
+        "parent": "home-1-faq",
+        "title": "Activated Carbon",
+        "body": "Carbon air filters are designed to remove gases, such as volatile organic compounds (VOCs) and odors, using activated carbon. They are effective at filtering VOCs from the air, which many other filters cannot touch."
+    },
+    {
+        "active": "true",
+        "id": "designed-for-clinical-use",
+        "parent": "home-1-faq",
+        "title": "Designed for Clinical Use",
+        "body": "This purifier is made of strong white acrylic, emphasizing its clinical-grade solution. It is robust and easy to clean, ideal for clinical environments."
+    }
+]

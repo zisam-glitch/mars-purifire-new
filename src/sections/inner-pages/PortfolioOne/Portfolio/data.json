@@ -1,0 +1,53 @@
+{
+  "navListInline": [
+    {
+      "title": "Show All",
+      "data_filter": "*"
+    },
+    {
+      "title": "Air Purifiers",
+      "data_filter": "portfolio-1"
+    },
+    {
+      "title": "Water Purifiers",
+      "data_filter": "portfolio-2"
+    }
+  ],
+  "portfolioContent": [
+    {
+      "image": "https://res.cloudinary.com/db1i46uiv/image/upload/v1718184963/untitled_gsenat.jpg",
+      "title": "Generation X",
+      "category": "£495.00",
+      "link": "/portfolio-details",
+      "data_filter": "portfolio-1"
+    },
+    {
+      "image": "https://res.cloudinary.com/db1i46uiv/image/upload/v1718184668/Untitled_u9ampu.png",
+      "title": "Generation Y",
+      "category": "£695.00",
+      "link": "/portfolio-details",
+      "data_filter": "portfolio-1"
+    },
+    {
+      "image": "https://res.cloudinary.com/db1i46uiv/image/upload/v1718185084/Untitled_1_nwzwl4.png",
+      "title": "Generation Z",
+      "category": "£1195.00",
+      "link": "/portfolio-details",
+      "data_filter": "portfolio-1"
+    },
+    {
+      "image": "https://res.cloudinary.com/db1i46uiv/image/upload/v1718354476/70747239986_rijgun.png",
+      "title": "Achilles Water Bottle White",
+      "category": "£44.99",
+      "link": "/portfolio-details",
+      "data_filter": "portfolio-2 "
+    },
+    {
+      "image": "https://res.cloudinary.com/db1i46uiv/image/upload/v1718354492/img2.ba24fa8e14af60dda8bb_2_kcqd86.png",
+      "title": "Achilles Water Bottle Black",
+      "category": "£44.99",
+      "link": "/portfolio-details",
+      "data_filter": "portfolio-2 "
+    }
+  ]
+}

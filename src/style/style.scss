@@ -1,0 +1,312 @@
+// ******* Use Import ********//
+
+@use "./helpers/base";
+@use "./helpers/overrides";
+@use "./components";
+@use "./sections";
+@use "./helpers";
+@use "./helpers/utilities";
+
+.video-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.33;
+  letter-spacing: -0.5px;
+  color: #0a102f;
+}
+
+.pr-0{
+  padding-right: 0 !important;
+}
+.pt-40{
+  padding-top: 40px;
+}
+.pl-80{
+  padding-left: 80px !important;
+}
+.gray{
+  background-color: #dad9d7 !important;
+}
+.h-475 {
+  height: 475px;
+}
+.h-500 {
+  height: 510px;
+}
+.h-600 {
+  height: 600px;
+}
+.h-400 {
+  height: 400px;
+}
+.h-120 {
+  height: 100px !important;
+}
+.fit-cover {
+  object-fit: cover;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pt-5 {
+  padding-top: 5px;
+}
+.pb-120 {
+  padding-bottom: 120px !important;
+}
+.pb-60 {
+  padding-bottom: 60px !important;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+.mt-120 {
+  margin-top: 120px;
+}
+
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.primary {
+  color: #1b75bc;
+}
+
+.navigation-list--inline li.active{
+  background-color: #1b75bc !important;
+
+}
+
+.align-center {
+  align-items: center;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+.p {
+  padding: 0 !important;
+}
+@media (min-width: 992px) {
+  .md-pt-200 {
+    padding-top: 200px !important;
+  }
+  .md-pb-150 {
+    padding-top: 150px !important;
+  }
+}
+
+.w-60 {
+  width: 60px;
+}
+
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: start;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: start !important;
+}
+
+.w-full {
+  width: 100%;
+}
+.text-right {
+  text-align: right;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+.my-0 {
+  max-height: auto;
+}
+
+.banerimage {
+  object-fit: cover;
+  height: 400px;
+  border-radius: 5px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.text-45 {
+  font-size: 45px !important;
+}
+.text-38 {
+  font-size: 38px;
+}
+
+.p-40 {
+  padding: 40px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.servCard {
+  padding: 40px;
+  display: flex;
+  height: 500px;
+  border-radius: 10px;
+  justify-content: center;
+  border: 1px solid #e6e6e6;
+  transition: 0.3s;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 40px;
+  background: #ffffff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.containerr {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.form-section,
+.table-section {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.form-title {
+  color: #408dc2;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-actions button {
+  width: 48%;
+  padding: 10px;
+  background-color: #1b75bc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  background-color: #155a8a;
+}
+
+
+
+.table-title {
+  color: #408dc2;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th,
+.table td {
+  border: 1px solid rgba(10, 16, 47, 0.3); /* Adjust border color to be very light */
+  padding: 11px;
+  text-align: center;
+}
+
+.table th {
+  color: black;
+  border-bottom: 1px solid rgba(10, 16, 47, 0.3) !important; /* Light border for the header */
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+  color: #408dc2;
+}
+
+.bg-light-2{
+  background-color: #1b76bc0a !important;
+}
+
+.home-1_content-section-2{
+  background-color: #1b76bc0a !important;
+
+}
+
+.mx-55{
+  max-height: 55px;
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "title": " Home",
+    "link": "/"
+  },
+  {
+    "title": "About Us",
+    "link": "/about"
+  },
+  {
+    "title": "Air purifier",
+    "subMenuItem": [
+      {
+        "name": "Dentistry",
+        "link": "/dental-air-purifiers-for-dental-clinics"
+      },
+      {
+        "name": "Education",
+        "link": "/air-purifiers-for-schools"
+      },
+      {
+        "name": "Health Care",
+        "link": "/clinical-air-purifiers-hospital-air-purifier-by-mars-purifier"
+      },
+      {
+        "name": "Business",
+        "link": "/commercial-air-purifier-commercial-air-purification-by-mars-purifier"
+      },
+      {
+        "name": "Hospitality",
+        "link": "/mars-airpurifier-hospitality"
+      },
+      {
+        "name": "Gym and fitness",
+        "link": "/air-purifiers-for-gyms-and-fitness-studios-mars-purifier"
+      }
+    ]
+  },
+  {
+    "title": "Water purifier",
+    "link": "/water-purifire"
+  },
+  {
+    "title": "Blog",
+    "link": "/"
+  },
+  {
+    "title": "Contact",
+    "link": "/contact"
+  }
+]
