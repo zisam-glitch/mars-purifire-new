@@ -57,6 +57,10 @@ export const router = createBrowserRouter([
     path: "/contact",
     element: <ContactPageThree />,
   },
+    {
+    path: "/about",
+    element: <AboutPage />,
+  },
 
   // {
   //   path: "/home-2",
@@ -94,10 +98,7 @@ export const router = createBrowserRouter([
   //   path: "/home-10",
   //   element: <HomepageTen />,
   // },
-  // {
-  //   path: "/about",
-  //   element: <AboutPage />,
-  // },
+
   // {
   //   path: "/reset-password",
   //   element: <ResetPasswordPage />,
