@@ -47,17 +47,12 @@ const PortfolioSection = () => {
                 key={index}
                 className={`col-lg-4 grid-item filter-item ${item?.data_filter}`}
               >
-                <PortfolioWidgetOne
-                  className="height-1"
-                  {...item}
-                />
+                <PortfolioWidgetOne className="height-1" {...item} />
               </div>
             ))}
           </div>
 
-          <div className="section-button">
-          
-          </div>
+          <div className="section-button"></div>
         </div>
       </section>
     </>

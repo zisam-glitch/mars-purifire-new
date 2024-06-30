@@ -13,6 +13,7 @@ import WaterPurifire from "../pages/WaterPurifire";
 import ContactPageThree from "../pages/ContactPageThree";
 import ErrorPage from "../pages/ErrorPage";
 import PortfolioOnePage from "../pages/PortfolioOnePage";
+import ProductDetails from "../pages/ProductDetails";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
   {
     path: "/dental-air-purifiers-for-dental-clinics",
     element: <Dental />,
+  },
+  {
+    path: "/product-details/:slug",
+    element: <ProductDetails />,
   },
   {
     path: "/air-purifiers-for-schools",
@@ -175,10 +180,6 @@ export const router = createBrowserRouter([
   // {
   //   path: "/portfolio-4",
   //   element: <PortfolioFourPage />,
-  // },
-  // {
-  //   path: "/portfolio-details",
-  //   element: <PortfolioDetailsPage />,
   // },
   // {
   //   path: "/faq",
