@@ -16,7 +16,6 @@ const settings = {
     image:
       "https://res.cloudinary.com/db1i46uiv/image/upload/v1718184963/untitled_gsenat.jpg",
     title: "Generation X",
-    category: "£495.00",
     url: "/product-details/generation-x",
     button: true,
   },
@@ -24,7 +23,6 @@ const settings = {
     image:
       "https://res.cloudinary.com/db1i46uiv/image/upload/v1718184668/Untitled_u9ampu.png",
     title: "Generation Y",
-    category: "£695.00",
     url: "/product-details/generation-y",
     button: true,
   },
@@ -32,18 +30,9 @@ const settings = {
     image:
       "https://res.cloudinary.com/db1i46uiv/image/upload/v1718185084/Untitled_1_nwzwl4.png",
     title: "Generation Z",
-    category: "£1195.00",
     url: "/product-details/generation-z",
     button: true,
-  },
-  cardFour: {
-    image:
-      "https://res.cloudinary.com/db1i46uiv/image/upload/v1718185084/Untitled_1_nwzwl4.png",
-    title: "Generation S",
-    category: "£1195.00",
-    url: "/product-details/generation-s",
-    button: true,
-  },
+  }
 };
 
 let settingProps = {
@@ -69,7 +58,7 @@ const Portfolio = () => {
       <div className="container">
         <SectionHeading {...settingProps.sectionHeading}>
           <Button
-            href="/portfolio"
+            href="/shop"
             className="btn-masco rounded-pill btn-fill--up"
           >
              All Products
@@ -85,9 +74,6 @@ const Portfolio = () => {
           </div>
           <div className="col-md-4 col-xs-10">
             <PortfolioWidgetOne {...settings.cardThree} />
-          </div>
-          <div className="col-md-4 col-xs-10">
-            <PortfolioWidgetOne {...settings.cardFour} />
           </div>
         </div>
       </div>

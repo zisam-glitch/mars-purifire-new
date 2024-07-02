@@ -1,3 +1,8 @@
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 const ProductImage = (props) => {
   return (
     <div className="home-1_hero-section md-pt-200 md-pb-150" id="hero">
@@ -15,7 +20,26 @@ const ProductImage = (props) => {
           <div className="col-xxl-auto col-lg-5 col-md-7 col-sm-8 col-10  transform-none ">
             <div className="home-1_hero-image-block">
               <div className="home-1_hero-image">
-                <img src={props.image_link} alt="hero image" />
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    }}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="mySwiper"
+                >
+                    {
+                        props.image_links.map((image, i) => (
+                            <SwiperSlide><img src={image} alt={i}/></SwiperSlide>
+                        ))
+                    }
+                </Swiper>
               </div>
             </div>
           </div>
@@ -36,6 +60,14 @@ const ProductImage = (props) => {
           </div>
         </div>
       </div>
+        <div className='w-full flex justify-center'>
+            <button
+                className="btn-masco btn-masco--header rounded-pill btn-fill--up mt-120"
+                onClick={props.openModal}
+            >
+                Request
+            </button>
+        </div>
     </div>
   );
 };

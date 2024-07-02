@@ -3,6 +3,7 @@ const ProductDetailsTable = (props) => {
   
     const specifications = [
       { label: "Model", value: productData.model },
+        { label: "Category", value: productData.category },
       { label: "CADR", value: productData.cadr },
       { label: "Coverage Area", value: `${productData.coverage}m²` },
       { label: "Noise Level", value: productData.noiseLevel },
