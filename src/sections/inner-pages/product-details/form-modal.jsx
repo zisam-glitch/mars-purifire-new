@@ -27,7 +27,7 @@ const FormModal = (props) => {
                             <input type='hidden' name="product" value={props.product}/>
                             <input type='hidden' name="redirect_url" value={props.redirect_url}/>
                             <div className="contact-3_main-comment-box__form-inner">
-                                <h2 className="contact-title">Send us a message</h2>
+                                <h2 className="contact-title">Request for Product</h2>
                                 <div className="contact-3_main-comment-box__form-input">
                                     <input
                                         className="form-control "
