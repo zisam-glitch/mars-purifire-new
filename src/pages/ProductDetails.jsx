@@ -186,15 +186,15 @@ const ProductDetails = () => {
         scroll={true}
         signUpButtonClass="btn-masco btn-masco--header rounded-pill btn-fill--up"
       />
-      <div className='flex flex-row'>
-        <div className='w-50'>
+      <div className='product-details-container'>
+        <div className='product-details-container__image'>
           <ProductImage
               name={productData?.model}
               image_links={productData?.image_links}
               openModal={openModal} closeModal={closeModal}
           />
         </div>
-        <div className='w-50'>
+        <div className='product-details-container__details'>
         <section className="portfolio-classic_main-section section-padding-120">
           <div className="container">
             <ul className="navigation-list navigation-list--inline">

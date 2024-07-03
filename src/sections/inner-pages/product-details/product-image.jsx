@@ -16,33 +16,30 @@ const ProductImage = (props) => {
         />
       </div>
       <div className="container">
-        <div className="row row--hero-content">
-          <div className="col-xxl-auto col-lg-5 col-md-7 col-sm-8 col-10  transform-none ">
-            <div className="home-1_hero-image-block">
-              <div className="home-1_hero-image">
-                <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                      delay: 2500,
-                      disableOnInteraction: false,
-                    }}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
-                >
-                    {
-                        props.image_links.map((image, i) => (
-                            <SwiperSlide><img src={image} alt={i}/></SwiperSlide>
-                        ))
-                    }
-                </Swiper>
-              </div>
-            </div>
-          </div>
+        <div className="col">
+            <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="mySwiper"
+                style={{
+                    width: '100%',
+                }}
+            >
+                {
+                    props.image_links.map((image, i) => (
+                        <SwiperSlide><img src={image} alt={i}/></SwiperSlide>
+                    ))
+                }
+            </Swiper>
           <div
             className="col-xxl-auto col-lg-7 col-md-10"
             data-aos-duration={1000}
