@@ -3,7 +3,7 @@ import FooterLayoutOne from "@components/Footer/FooterOne";
 import Header from "@components/Header";
 import Layout from "../components/Layout/PageWrapper/PageWrapper";
 import { useState, useEffect } from "react";
-import Modal from 'react-modal';
+import { useLocation } from 'react-router-dom';
 import Isotope from "isotope-layout";
 import FormModal from "@sections/inner-pages/product-details/form-modal";
 import ProductDescription from "@sections/inner-pages/product-details/product-description";
@@ -151,6 +151,9 @@ const ProductDetails = () => {
     setModalIsOpen(false);
   };
 
+  const location = useLocation();
+  const fullPath = `${window.location.origin}${location.pathname}`;
+
   useEffect(() => {
     setIsotope(
       new Isotope(".filter-container", {
@@ -219,7 +222,13 @@ const ProductDetails = () => {
       </div>
 
 
-      <FormModal modalIsOpen={modalIsOpen} openModal={openModal} closeModal={closeModal} />
+      <FormModal
+          modalIsOpen={modalIsOpen}
+          openModal={openModal}
+          closeModal={closeModal}
+          product={productData?.model}
+          redirect_url={fullPath}
+      />
       <FooterLayoutOne {...settingProps.footer} />
     </Layout>
   );
