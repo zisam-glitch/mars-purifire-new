@@ -3,22 +3,23 @@ const ProductDetailsTable = (props) => {
   
     const specifications = [
       { label: "Model", value: productData.model },
+        { label: "Category", value: productData.category },
       { label: "CADR", value: productData.cadr },
-      { label: "Coverage Area", value: `${productData.coverage}m²` },
+      { label: "Coverage Area", value: `${productData.coverage}` },
       { label: "Noise Level", value: productData.noiseLevel },
-      { label: "Power Consumption", value: `${productData.power}W` },
+      { label: "Power Consumption", value: `${productData.power}` },
       { label: "Voltage", value: `${productData.voltage}V` },
-      { label: "Rated Frequency", value: `${productData.ratedFrequency}Hz` },
+      { label: "Rated Frequency", value: `${productData.ratedFrequency}` },
       {
         label: "Product Dimensions",
-        value: `${productData.productDimensions}mm`,
+        value: `${productData.productDimensions}`,
       },
       {
         label: "Package Dimensions",
-        value: `${productData.packageDimensions}mm`,
+        value: `${productData.packageDimensions}`,
       },
-      { label: "Net Weight", value: `${productData.netWeight}kg` },
-      { label: "Gross Weight", value: `${productData.grossWeight}kg` },
+      { label: "Net Weight", value: `${productData.netWeight}` },
+      { label: "Gross Weight", value: `${productData.grossWeight}` },
     ];
   
     return (

@@ -22,23 +22,23 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                 className={`list-social${socialClass ? ` ${socialClass}` : ""}`}
               >
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/marspurifier.uk" target="_blank">
                     <i className="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" target="_blank">
                     <i className="fa-brands fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/mars.purifier" target="_blank">
                     <i className="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fa-brands fa-github"></i>
+                  <a href="https://www.youtube.com/@marspurifier7320" target="_blank">
+                    <i className="fa-brands fa-youtube"></i>
                   </a>
                 </li>
               </ul>
@@ -70,13 +70,13 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                     <a href="#">Home</a>
                   </li>
                   <li>
-                    <a href="#">About</a>
+                    <a href="/about">About</a>
                   </li>
                   <li>
                     <a href="#">Blog</a>
                   </li>
                   <li>
-                    <a href="#"> Contact </a>
+                    <a href="/contact"> Contact </a>
                   </li>
                 </ul>
               </div>

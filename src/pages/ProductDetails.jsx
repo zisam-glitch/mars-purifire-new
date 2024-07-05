@@ -3,7 +3,9 @@ import FooterLayoutOne from "@components/Footer/FooterOne";
 import Header from "@components/Header";
 import Layout from "../components/Layout/PageWrapper/PageWrapper";
 import { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import Isotope from "isotope-layout";
+import FormModal from "@sections/inner-pages/product-details/form-modal";
 import ProductDescription from "@sections/inner-pages/product-details/product-description";
 import ProductDetailsTable from "@sections/inner-pages/product-details/product-specification";
 import ProductImage from "@sections/inner-pages/product-details/product-image";
@@ -38,6 +40,7 @@ const data = {
 const airPurifiers = [
     {
         model: "Generation S",
+        category: "Domestic",
         cadr: "160m3/hr",
         coverage: "30m2",
         noiseLevel: "<58db",
@@ -50,11 +53,17 @@ const airPurifiers = [
         grossWeight: "3.6kg",
         // Add generation key based on model prefix
         key: "generation-s",
-        image_link:
-          "https://res.cloudinary.com/db1i46uiv/image/upload/v1718184963/untitled_gsenat.jpg",
+        image_links:[
+          "public/image/gen-x/1 - Gen X .jpg",
+          "public/image/gen-x/2 - Gen X .jpg",
+          "public/image/gen-x/3 - Gen X .jpg",
+          "public/image/gen-x/4 - Gen X .jpg",
+          "public/image/gen-x/5 - Gen X .jpg",
+          ],
       },
       {
         model: "Generation X",
+        category: "Domestic",
         cadr: "720m3/hr",
         coverage: "144m2",
         noiseLevel: "<56db",
@@ -67,11 +76,17 @@ const airPurifiers = [
         grossWeight: "7.55kg",
         // Add generation key based on model prefix
         key: "generation-x",
-        image_link:
-          "https://res.cloudinary.com/db1i46uiv/image/upload/v1718184963/untitled_gsenat.jpg",
+        image_links:[
+          "/public/image/gen-x/1 - Gen X .jpg",
+          "/public/image/gen-x/2- Gen X.jpg",
+          "/public/image/gen-x/3 - Gen X.jpg",
+          "/public/image/gen-x/4 - Gen X.jpg",
+          "/public/image/gen-x/5 - Gen X.jpg",
+        ],
       },
       {
         model: "Generation Y",
+        category: "Clinical",
         cadr: "633m3/hr",
         coverage: "126m2",
         noiseLevel: "<65db",
@@ -84,11 +99,15 @@ const airPurifiers = [
         grossWeight: "11kg",
         // Add generation key based on model prefix
         key: "generation-y",
-        image_link:
-          "https://res.cloudinary.com/db1i46uiv/image/upload/v1718184668/Untitled_u9ampu.png",
+        image_links:[
+          "/public/image/gen-y/Gen Y BACK.jpg",
+          "/public/image/gen-y/Gen Y Front 1.jpg",
+          "/public/image/gen-y/Gen Y Front 2.jpg",
+            ],
       },
       {
         model: "Generation Z",
+        category: "Industrial",
         cadr: "1156m3/hr",
         coverage: "230m2",
         noiseLevel: "<70db",
@@ -101,12 +120,20 @@ const airPurifiers = [
         grossWeight: "29kg",
         // Add generation key based on model prefix
         key: "generation-z",
-        image_link:
-          "https://res.cloudinary.com/db1i46uiv/image/upload/v1718185084/Untitled_1_nwzwl4.png",
+        image_links:[
+          "/public/image/gen-z/generation Z.png",
+          "/public/image/gen-z/generation Z purifier.3204.png",
+          "/public/image/gen-z/generation Z purifier.3207.png",
+          "/public/image/gen-z/generation Z purifier.3216.png",
+          "/public/image/gen-z/generation Z purifier.3220.png",
+            ],
       },
 ];
 
+
+
 const ProductDetails = () => {
+
   const [isotope, setIsotope] = useState(null);
   const [filterKey, setFilterKey] = useState("description");
   const { slug } = useParams();
@@ -114,7 +141,18 @@ const ProductDetails = () => {
   const installation_download_link = data.download_links.find(
     (item) => item.key === slug
   ).link;
-  console.log(installation_download_link);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const location = useLocation();
+  const fullPath = `${window.location.origin}${location.pathname}`;
 
   useEffect(() => {
     setIsotope(
@@ -138,7 +176,7 @@ const ProductDetails = () => {
       case "support":
         return <ProductSupport link={installation_download_link} />;
       default:
-        return <ProductDescription />;
+        return <ProductDescription productData={productData} />;
     }
   };
 
@@ -148,33 +186,49 @@ const ProductDetails = () => {
         scroll={true}
         signUpButtonClass="btn-masco btn-masco--header rounded-pill btn-fill--up"
       />
-      <ProductImage
-        name={productData?.model}
-        image_link={productData?.image_link}
-      />
-      <section className="portfolio-classic_main-section section-padding-120">
-        <div className="container">
-          <ul className="navigation-list navigation-list--inline">
-            {data.navListInline.map(({ title, data_filter }, index) => (
-              <li
-                key={index}
-                data-filter={data_filter}
-                onClick={() => setFilterKey(data_filter)}
-                className={data_filter === filterKey ? "active" : ""}
-              >
-                <button className="btn rounded-pill">{title}</button>
-              </li>
-            ))}
-          </ul>
-          <div className="row navigation-active isotope-navigation portfolio-v1 filter-container">
-            {data.navListInline.map((item, index) => (
-              <div key={index} className={`filter-item ${item?.data_filter}`}>
-                <div className="details-container">{renderContent(item)}</div>
-              </div>
-            ))}
-          </div>
+      <div className='product-details-container'>
+        <div className='product-details-container__image'>
+          <ProductImage
+              name={productData?.model}
+              image_links={productData?.image_links}
+              openModal={openModal} closeModal={closeModal}
+          />
         </div>
-      </section>
+        <div className='product-details-container__details'>
+        <section className="portfolio-classic_main-section section-padding-120">
+          <div className="container">
+            <ul className="navigation-list navigation-list--inline">
+              {data.navListInline.map(({title, data_filter}, index) => (
+                  <li
+                      key={index}
+                      data-filter={data_filter}
+                      onClick={() => setFilterKey(data_filter)}
+                      className={data_filter === filterKey ? "active" : ""}
+                  >
+                    <button className="btn rounded-pill">{title}</button>
+                  </li>
+              ))}
+            </ul>
+            <div className="row navigation-active isotope-navigation portfolio-v1 filter-container">
+              {data.navListInline.map((item, index) => (
+                  <div key={index} className={`filter-item ${item?.data_filter}`}>
+                    <div className="details-container">{renderContent(item)}</div>
+                  </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        </div>
+      </div>
+
+
+      <FormModal
+          modalIsOpen={modalIsOpen}
+          openModal={openModal}
+          closeModal={closeModal}
+          product={productData?.model}
+          redirect_url={fullPath}
+      />
       <FooterLayoutOne {...settingProps.footer} />
     </Layout>
   );

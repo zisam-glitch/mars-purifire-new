@@ -60,14 +60,18 @@
 .pb-60 {
   padding-bottom: 60px !important;
 }
-
+.mb-30 {
+  margin-bottom: 30px;
+}
 .mb-120 {
   margin-bottom: 120px;
 }
 .mt-120 {
   margin-top: 120px;
 }
-
+.mt-20 {
+  margin-top: 20px;
+}
 .mb-12 {
   margin-bottom: 12px !important;
 }
@@ -309,4 +313,42 @@
 
 .mx-55{
   max-height: 55px;
+}
+
+.styled-list {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.product-details-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+  &__image {
+    width: 50%;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__details {
+      width: 50%;
+      @media (max-width: 992px) {
+        width: 100%;
+        padding: 20px 0;
+      }
+  }
 }
