@@ -59,10 +59,10 @@ const ProductImage = (props) => {
       </div>
         <div className='w-full flex justify-center'>
             <button
-                className="btn-masco btn-masco--header rounded-pill btn-fill--up mt-120"
+                className="btn-masco btn-masco--header rounded-pill btn-fill--up mt-20"
                 onClick={props.openModal}
             >
-                Request
+               Price On Request
             </button>
         </div>
     </div>

@@ -19,9 +19,9 @@ const PortfolioWidgetOne = ({
       </div>
       <div className="portfolio-widget__title-block">
         <h3 className="portfolio-widget__title">{title}</h3>
-        {category ? (
+        {/* {category ? (
           <span className="portfolio-widget__category">{category}</span>
-        ) : null}
+        ) : null} */}
       </div>
       {buttonText ? (
         <div className="portfolio-widget__link">

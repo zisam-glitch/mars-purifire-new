@@ -17,7 +17,7 @@ const settings = {
       "https://res.cloudinary.com/db1i46uiv/image/upload/v1718184963/untitled_gsenat.jpg",
     title: "Generation X",
     category: "£495.00",
-    url: "/portfolio-details",
+    url: "/product-details/generation-x",
     button: true,
   },
   cardTwo: {
@@ -25,7 +25,7 @@ const settings = {
       "https://res.cloudinary.com/db1i46uiv/image/upload/v1718184668/Untitled_u9ampu.png",
     title: "Generation Y",
     category: "£695.00",
-    url: "/portfolio-details",
+    url: "/product-details/generation-y",
     button: true,
   },
   cardThree: {
@@ -33,7 +33,7 @@ const settings = {
       "https://res.cloudinary.com/db1i46uiv/image/upload/v1718185084/Untitled_1_nwzwl4.png",
     title: "Generation Z",
     category: "£1195.00",
-    url: "/portfolio-details",
+    url: "/product-details/generation-z",
     button: true,
   },
 };

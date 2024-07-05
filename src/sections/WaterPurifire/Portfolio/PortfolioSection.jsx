@@ -53,7 +53,7 @@ const Portfolio = () => {
       <div className="container">
         <SectionHeading {...settingProps.sectionHeading}>
           <Button
-            href="/portfolio"
+            href="/shop"
             className="btn-masco rounded-pill btn-fill--up"
           >
              All Products
