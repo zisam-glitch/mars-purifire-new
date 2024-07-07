@@ -10,11 +10,16 @@ import ProductDescription from "@sections/inner-pages/product-details/product-de
 import ProductDetailsTable from "@sections/inner-pages/product-details/product-specification";
 import ProductImage from "@sections/inner-pages/product-details/product-image";
 import ProductSupport from "@sections/inner-pages/product-details/product-support";
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
 import generationXfile from "../../public/files/Generation X INSTALLATION.pdf";
 import generationYfile from "../../public/files/Generation Y INSTALLATION.pdf";
 import generationZfile from "../../public/files/Generation Z INSTALLATION.pdf";
 import generationSfile from "../../public/files/Generation S INSTALLATION.pdf";
+import generationXbrochurefile from "../../public/files/Generation X and Y brochure.pdf";
+import generationYbrochurefile from "../../public/files/Generation X and Y brochure.pdf";
+import generationZbrochurefile from "../../public/files/Generation Z and Generation Z ULTRA Brochure.pdf";
+import generationSbrochurefile from "../../public/files/Generation S Brochure.pdf";
+
 
 const settingProps = {
   footer: {
@@ -30,10 +35,10 @@ const data = {
     { title: "Support", data_filter: "support" },
   ],
   download_links: [
-    { key: "generation-z", link: generationZfile },
-    { key: "generation-x", link: generationXfile },
-    { key: "generation-y", link: generationYfile },
-    { key: "generation-s", link: generationSfile },
+    { key: "generation-z", link: generationZfile , brochurelink : generationZbrochurefile},
+    { key: "generation-x", link: generationXfile , brochurelink : generationXbrochurefile},
+    { key: "generation-y", link: generationYfile , brochurelink : generationYbrochurefile},
+    { key: "generation-s", link: generationSfile , brochurelink : generationSbrochurefile},
   ],
 };
 
@@ -55,11 +60,10 @@ const airPurifiers = [
         key: "generation-s",
       shortDescription: "Generation S is a domestic air purifier designed for spaces up to 30m2. It operates with a power usage of <20W.",
         image_links:[
-          "public/image/gen-x/1 - Gen X .jpg",
-          "public/image/gen-x/2 - Gen X .jpg",
-          "public/image/gen-x/3 - Gen X .jpg",
-          "public/image/gen-x/4 - Gen X .jpg",
-          "public/image/gen-x/5 - Gen X .jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720292075/Gen_S_Front_2_quasnr.png",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720292075/Gen_S_Side_1_qfhvxq.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720292077/Gen_S_Side_2_bukcui.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720292081/Gen_S_Top_1_ufwr0y.jpg",
           ],
       },
       {
@@ -79,11 +83,11 @@ const airPurifiers = [
         key: "generation-x",
         shortDescription: "Generation X is a domestic air purifier designed for spaces up to 144m2. It operates with a power usage of 26W or 46W.",
         image_links:[
-          "/public/image/gen-x/1 - Gen X .jpg",
-          "/public/image/gen-x/2- Gen X.jpg",
-          "/public/image/gen-x/3 - Gen X.jpg",
-          "/public/image/gen-x/4 - Gen X.jpg",
-          "/public/image/gen-x/5 - Gen X.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291959/1_-_Gen_X_iausxd.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291955/2-_Gen_X_fltowu.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291953/3_-_Gen_X_xqmvwp.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291953/4_-_Gen_X_ftrobf.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291951/5_-_Gen_X_zvugsn.jpg",
         ],
       },
       {
@@ -103,9 +107,9 @@ const airPurifiers = [
         key: "generation-y",
         shortDescription: "Generation Y is a clinical air purifier designed for spaces up to 126m2. It operates with a power usage of <85W.",
         image_links:[
-          "/public/image/gen-y/Gen Y BACK.jpg",
-          "/public/image/gen-y/Gen Y Front 1.jpg",
-          "/public/image/gen-y/Gen Y Front 2.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291991/Gen_Y_Front_1_ii4t2i.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291999/Gen_Y_BACK_sgrmn4.jpg",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291989/Gen_Y_Front_2_ahp6rs.jpg",
             ],
       },
       {
@@ -125,11 +129,11 @@ const airPurifiers = [
         // Add generation key based on model prefix
         key: "generation-z",
         image_links:[
-          "/public/image/gen-z/generation Z.png",
-          "/public/image/gen-z/generation Z purifier.3204.png",
-          "/public/image/gen-z/generation Z purifier.3207.png",
-          "/public/image/gen-z/generation Z purifier.3216.png",
-          "/public/image/gen-z/generation Z purifier.3220.png",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291725/generation_Z_nomwop.png",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291725/generation_Z_purifier.3216_zqwckv.png",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291726/generation_Z_purifier.3220_lk7wfh.png",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291730/generation_Z_purifier.3204_tklqwz.png",
+          "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720291730/generation_Z_purifier.3207_x6n5xk.png",
             ],
       },
 ];
@@ -144,7 +148,8 @@ const ProductDetails = () => {
   const productData = airPurifiers.find((item) => item.key === slug);
   const installation_download_link = data.download_links.find(
     (item) => item.key === slug
-  ).link;
+  );
+  //.link
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {

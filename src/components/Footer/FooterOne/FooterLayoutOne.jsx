@@ -27,11 +27,6 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank">
-                    <i className="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
                   <a href="https://www.instagram.com/mars.purifier" target="_blank">
                     <i className="fa-brands fa-instagram"></i>
                   </a>
@@ -105,7 +100,7 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
         <div className="container">
           <div className="copyright-inner text-center  copyright-border">
             <p>
-              © Copyright 2024, Build by <u> Grow With Sayed</u>
+              © Copyright 2024, Build by <a target="_blank" href="https://www.growwithsayed.com/"><u>Grow With Sayed</u></a>
             </p>
           </div>
         </div>
