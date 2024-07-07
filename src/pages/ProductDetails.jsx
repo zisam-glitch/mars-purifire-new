@@ -53,6 +53,7 @@ const airPurifiers = [
         grossWeight: "3.6kg",
         // Add generation key based on model prefix
         key: "generation-s",
+      shortDescription: "Generation S is a domestic air purifier designed for spaces up to 30m2. It operates with a power usage of <20W.",
         image_links:[
           "public/image/gen-x/1 - Gen X .jpg",
           "public/image/gen-x/2 - Gen X .jpg",
@@ -76,6 +77,7 @@ const airPurifiers = [
         grossWeight: "7.55kg",
         // Add generation key based on model prefix
         key: "generation-x",
+        shortDescription: "Generation X is a domestic air purifier designed for spaces up to 144m2. It operates with a power usage of 26W or 46W.",
         image_links:[
           "/public/image/gen-x/1 - Gen X .jpg",
           "/public/image/gen-x/2- Gen X.jpg",
@@ -99,6 +101,7 @@ const airPurifiers = [
         grossWeight: "11kg",
         // Add generation key based on model prefix
         key: "generation-y",
+        shortDescription: "Generation Y is a clinical air purifier designed for spaces up to 126m2. It operates with a power usage of <85W.",
         image_links:[
           "/public/image/gen-y/Gen Y BACK.jpg",
           "/public/image/gen-y/Gen Y Front 1.jpg",
@@ -118,6 +121,7 @@ const airPurifiers = [
         packageDimensions: "950x570x380mm",
         netWeight: "26.5kg",
         grossWeight: "29kg",
+        shortDescription: "Generation Z is an industrial air purifier designed for spaces up to 230m2. It operates with a power usage of 110W.",
         // Add generation key based on model prefix
         key: "generation-z",
         image_links:[
@@ -190,6 +194,8 @@ const ProductDetails = () => {
         <div className='product-details-container__image'>
           <ProductImage
               name={productData?.model}
+              shortDescription={productData?.shortDescription}
+              category={productData?.category}
               image_links={productData?.image_links}
               openModal={openModal} closeModal={closeModal}
           />
