@@ -76,7 +76,7 @@ const Header = ({
             >
               <div className="mobile-menu-head">
                 <Link to="/index">
-                  <BrandLogo type="white" />
+                  <BrandLogo type="white111" className='brand-logo'/>
                 </Link>
                 <div className="current-menu-title" />
                 <div

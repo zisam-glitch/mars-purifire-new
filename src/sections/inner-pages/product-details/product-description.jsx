@@ -7,7 +7,7 @@ const ProductDescription = ({ productData }) => {
 
     return (
         <div>
-            <div className="containerr">
+            <div className="product-description-container">
                 <h2 className="form-title">Introducing the Powerful and Efficient {productData.model}</h2>
                 <h3 className="form-title">{productData.category} Air Purifier</h3>
                 <p className="text-18">

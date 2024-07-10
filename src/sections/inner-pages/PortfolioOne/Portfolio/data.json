@@ -33,7 +33,7 @@
       "data_filter": "portfolio-1"
     },
     {
-      "image": "https://res.cloudinary.com/db1i46uiv/image/upload/v1718185084/Untitled_1_nwzwl4.png",
+      "image": "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720292075/Gen_S_Front_2_quasnr.png",
       "title": "Generation S",
       "url": "/product-details/generation-s",
       "data_filter": "portfolio-1"
@@ -51,28 +51,28 @@
       "data_filter": "portfolio-2 "
     },
     {
-      "image": "public/image/filter/Gen S Filter 1 2.jpg",
+      "image": "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720292172/Gen_S_Filter_1_2_gqmtbv.jpg",
       "title": "Gen S Filter",
       "url": "/portfolio-details",
-      "data_filter": "portfolio-2 "
+      "data_filter": "*"
     },
     {
-      "image": "public/image/filter/Gen X Filter 1.jpg",
+      "image": "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720292168/Gen_X_Filter_1_fcjroz.jpg",
       "title": "Gen X Filter",
       "url": "/portfolio-details",
-      "data_filter": "portfolio-2 "
+      "data_filter": "*"
     },
     {
-      "image": "public/image/filter/Gen Y Filter 1.jpg",
+      "image": "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720292166/Gen_Y_Filter_1_vqz4oe.jpg",
       "title": "Gen Y Filter",
       "url": "/portfolio-details",
-      "data_filter": "portfolio-2 "
+      "data_filter": "*"
     },
     {
-      "image": "public/image/filter/Gen Z filter.JPG",
+      "image": "https://res.cloudinary.com/dyzgc1l2g/image/upload/v1720292164/Gen_Z_filter_pt4msf.jpg",
       "title": "Gen Z Filter",
       "url": "/portfolio-details",
-      "data_filter": "portfolio-2 "
+      "data_filter": "*"
     }
   ]
 }
